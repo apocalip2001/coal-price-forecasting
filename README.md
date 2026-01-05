@@ -32,3 +32,6 @@ Machine learning-based forecasting of thermal coal prices using market fundament
 5. Natural gas lagged returns (3.1%)
 
 ## Project Structure
+
+## License
+MIT License
