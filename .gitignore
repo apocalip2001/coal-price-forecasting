@@ -15,4 +15,7 @@ venv/
 
 # IDE
 .vscode/
-.idea/
+.idea/# Python
+__pycache__/
+*.pyc
+.env
