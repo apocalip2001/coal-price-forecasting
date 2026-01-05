@@ -1,0 +1,51 @@
+
+================================================================================
+THERMAL COAL PRICE FORECASTING - PROJECT SUMMARY
+================================================================================
+
+PROJECT OVERVIEW
+----------------
+Target: Next-day thermal coal return prediction
+Data: Daily market data (2015-2024)
+Total observations: 2541
+Features: 151
+
+DATA SPLIT
+----------
+Training:   1778 samples (2015-04 to 2022-01)
+Validation: 381 samples (2022-01 to 2023-07)  
+Test:       382 samples (2023-07 to 2024-12)
+
+MODEL PERFORMANCE (Test Set)
+----------------------------
+            Model     RMSE      MAE  Dir_Acc  Rank
+    Decision Tree 0.021715 0.015822 0.523560     1
+Gradient Boosting 0.021923 0.015824 0.547120     2
+             LSTM 0.023214 0.017118 0.515235     3
+            Ridge 0.023562 0.017313 0.515707     4
+
+Baseline RMSE (predict 0): 0.021588
+
+KEY FINDINGS
+------------
+1. Gradient Boosting achieved best directional accuracy (54.7%)
+2. Decision Tree achieved lowest RMSE (0.0217)
+3. All models perform close to random walk baseline (expected for efficient markets)
+4. Top predictive features: Steel sector, Heating oil, Materials, Natural gas
+
+FEATURE IMPORTANCE (Top 5)
+--------------------------
+1. steel_slx_ret (10.1%) - Steel industry demand
+2. heating_oil_ret (5.4%) - Energy complex linkage
+3. materials_xlb_ret (4.8%) - Industrial demand
+4. coal_china_yzcm_ret_ma63 (4.0%) - Coal momentum
+5. coal_china_yzcm_ret (3.7%) - Same-day coal movement
+
+PRACTICAL IMPLICATIONS
+----------------------
+- Models show modest predictive power for direction (>50%)
+- Steel and energy markets are leading indicators for coal
+- China economic indicators are important for coal forecasting
+- Combining with fundamental analysis could improve results
+
+================================================================================
