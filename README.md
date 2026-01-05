@@ -35,3 +35,4 @@ Machine learning-based forecasting of thermal coal prices using market fundament
 
 ## License
 MIT License
+# Coal Price Forecasting - Complete
