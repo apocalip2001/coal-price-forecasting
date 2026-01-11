@@ -141,7 +141,7 @@ diff run1.log run2.log      # Should show no differences
 
 ## Report
 
-See [`docs/report.pdf`](docs/report.pdf) for the full methodology report including:
+See report for the full methodology report including:
 - Data description and preprocessing
 - Feature engineering approach
 - Model architectures and hyperparameters
@@ -152,10 +152,4 @@ See [`docs/report.pdf`](docs/report.pdf) for the full methodology report includi
 ## License
 
 MIT License
-```
 
-**Step 4:** Scroll down to "Commit changes"
-
-**Step 5:** Add commit message:
-```
-Update README with setup instructions
