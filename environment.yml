@@ -1,0 +1,57 @@
+# ============================================
+# Coal Price Forecasting - Conda Environment
+# ============================================
+# Usage:
+#   conda env create -f environment.yml
+#   conda activate coal-forecasting
+# ============================================
+
+name: coal-forecasting
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python version
+  - python>=3.10
+  
+  # Core Data Science
+  - numpy>=1.23
+  - pandas>=1.5
+  - scipy>=1.9
+  
+  # Machine Learning
+  - scikit-learn>=1.2
+  - xgboost>=1.7
+  
+  # Deep Learning
+  - tensorflow>=2.12
+  
+  # Visualization
+  - matplotlib>=3.6
+  - seaborn>=0.12
+  - plotly>=5.10
+  
+  # Jupyter Support
+  - jupyter
+  - ipykernel
+  - nbconvert
+  
+  # Utilities
+  - python-dateutil>=2.8
+  - tqdm>=4.64
+  - joblib>=1.2
+  
+  # Pip packages (not available in conda)
+  - pip
+  - pip:
+    - yfinance>=0.2.0
+    - pandas-datareader>=0.10.0
+```
+
+**Step 6:** Scroll down to "Commit changes"
+
+**Step 7:** Add a commit message like:
+```
+Add environment.yml for conda users
